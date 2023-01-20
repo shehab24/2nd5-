@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  padding: 15px 25px;
+  background-color: #242424;
+}
+.top_nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'roboto';
+}
+.top_icon_box {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.top_icon_box span i {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.top_icon_box span .search_box {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 4px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.top_icon_box span .search_box #search {
+  width: 80%;
+  background-color: none;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 4px;
+  font-size: 1rem;
+  font-family: 'roboto';
+  font-weight: 400;
+}
+.top_icon_box span .search_box i {
+  color: #242424;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+  cursor: pointer;
+}
+.user_box {
+  position: relative;
+}
+.ul_box {
+  width: 150px;
+  background-color: #242424;
+  padding: 4px;
+  position: absolute;
+  top: 70px;
+  left: -25px;
+  text-align: center;
+  transform-origin: top;
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.user_drop {
+  display: block;
+  margin-top: 20px;
+}
+.user_box:hover .ul_box {
+  top: 30px;
+  visibility: visible;
+  opacity: 1;
+}
+.user_drop li {
+  list-style: none;
+  width: 100%;
+  padding: 8px;
+}
+.user_drop li i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+.user_drop li a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+header {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #ddd;
+}
+.second_nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_title {
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.nav_title h3 {
+  margin-left: 60px;
+  font-size: 1.4rem;
+}
+.humber {
+  position: relative;
+}
+.humber i {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+#select {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'roboto';
+}
+.hum_menu {
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: #ccc;
+  text-align: center;
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 1;
+}
+.hum_menu.active {
+  top: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+.hum_menu ul {
+  width: 100%;
+  display: block;
+}
+.hum_menu li {
+  list-style: none;
+  padding: 10px 4px;
+  position: relative;
+}
+.hum_menu li i {
+  margin-left: 10px;
+  font-size: 14px;
+  color: dodgerblue;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  cursor: pointer;
+}
+.hum_menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: dodgerblue;
+}
+.hum_menu li .hum_sub {
+  width: 150px;
+  position: absolute;
+  left: 150%;
+  top: 15px;
+  text-align: center;
+  background-color: #ddd;
+  transition: all 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.submenu_one:hover .hum_sub {
+  visibility: visible;
+  opacity: 1;
+  left: 107%;
+}
+.hum_menu li .hum_sub ul {
+  display: block;
+  width: 100%;
+}

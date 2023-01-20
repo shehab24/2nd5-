@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3a8d368fd0.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="top_nav">
+        <h2 class="logo">Demo logo</h2>
+        <div class="top_icon_box">
+          <span class="user_box">
+            <i class="fas fa-th"></i>
+            <div class="ul_box">
+              <ul class="user_drop">
+                <li><i class="far fa-id-card"></i><a href="">Sample A</a></li>
+                <li><i class="far fa-id-card"></i><a href="">Sample B</a></li>
+                <li><i class="far fa-id-card"></i><a href="">Sample C</a></li>
+                <li><i class="far fa-id-card"></i><a href="">Sample D</a></li>
+                <li><i class="far fa-id-card"></i><a href="">Sample E</a></li>
+              </ul>
+            </div>
+          </span>
+          <span class="user_box">
+            <i class="fas fa-user-circle"></i>
+            <div class="ul_box">
+              <ul class="user_drop">
+                <li>
+                  <i class="fas fa-users"></i><a href="">Create new user</a>
+                </li>
+                <li>
+                  <i class="fas fa-sign-in-alt"></i><a href="">Sign in</a>
+                </li>
+              </ul>
+            </div>
+          </span>
+          <span class="">
+            <div class="search_box">
+              <input type="text" placeholder="Search" name="" id="search" />
+              <i class="fas fa-search"></i>
+            </div>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="second_nav">
+        <div class="nav_title">
+          <span class="humber">
+            <i class="fas fa-bars" id="menu_btn"></i>
+            <div class="hum_menu">
+              <ul>
+                <li><a href="">Home</a><i class="fas fa-home"></i></li>
+                <li class="submenu_one">
+                  <a href="">TopicA</a><i class="fas fa-arrow-right"></i>
+                  <div class="hum_sub">
+                    <ul>
+                      <li><a href="">Submenu1</a></li>
+                      <li><a href="">Submenu1</a></li>
+                      <li><a href="">Submenu1</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="">TopicB</a><i class="fas fa-arrow-right"></i></li>
+                <li><a href="">TopicC</a></li>
+                <li class="submenu_one">
+                  <a href="">TopicD</a><i class="fas fa-arrow-right"></i>
+                  <div class="hum_sub">
+                    <ul>
+                      <li><a href="">Submenu1</a></li>
+                      <li><a href="">Submenu1</a></li>
+                      <li><a href="">Submenu1</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </span>
+          <h3>Title goes here</h3>
+        </div>
+        <div class="select_box">
+          <select name="" id="select">
+            <option value="English">English</option>
+            <option value="English">English</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      var menu_btn = document.querySelector("#menu_btn");
+      var menu = document.querySelector(".hum_menu");
+      menu_btn.addEventListener("click", function () {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
